@@ -1,0 +1,109 @@
+:root {
+  /* Primary brand colors */
+  --color-primary: #0A0A0A;   /* Deep Charcoal */
+  --color-secondary: #E8DCC2; /* Sand Beige */
+  --color-accent: #2E8A8C;    /* Ocean Teal */
+  --color-light: #F7F5F0;     /* Off-White */
+
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #E8DCC2;
+  --text-muted: #C4C4C4;
+
+  /* Backgrounds */
+  --bg-dark: #000000;
+  --bg-light: #F7F5F0;
+
+  /* Buttons */
+  --btn-primary-bg: #2E8A8C;
+  --btn-primary-text: #FFFFFF;
+  --btn-hover-bg: #256F70;
+
+  /* Borders */
+  --border-light: #E8DCC2;
+}
+
+
+/* -------------------------------------------
+   FEATURED VILLAS SECTION — MATCHING THEME
+-------------------------------------------- */
+
+.featured-villas {
+    background: #dad3c3;
+    padding: 5rem 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.fv-container {
+    text-align: center;
+}
+
+.fv-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.fv-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    max-width: 650px;
+    margin: 0 auto 3rem auto;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* Grid */
+.fv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+/* Villa Card */
+.fv-card {
+    background: var(--color-light);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border-light);
+    transition: 0.3s ease;
+}
+
+.fv-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.fv-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Info Section */
+.fv-info {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.fv-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.4rem;
+}
+
+.fv-location {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+}
+
+.fv-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+}
