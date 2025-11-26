@@ -1,0 +1,89 @@
+:root {
+  /* Primary brand colors */
+  --color-primary: #0A0A0A;   /* Deep Charcoal */
+  --color-secondary: #E8DCC2; /* Sand Beige */
+  --color-accent: #2E8A8C;    /* Ocean Teal */
+  --color-light: #F7F5F0;     /* Off-White */
+
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #E8DCC2;
+  --text-muted: #C4C4C4;
+
+  /* Backgrounds */
+  --bg-dark: #000000;
+  --bg-light: #F7F5F0;
+
+  /* Buttons */
+  --btn-primary-bg: #2E8A8C;
+  --btn-primary-text: #FFFFFF;
+  --btn-hover-bg: #256F70;
+
+  /* Borders */
+  --border-light: #E8DCC2;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-light);
+  color: var(--color-primary);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--btn-hover-bg);
+}
+
+/* header */
+/* base wrapper */
+.header {
+  background: rgba(0,0,0,0.5);
+  color: var(--text-primary);
+}
+
+/* flex layout for logo + nav */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+/* logo block (simple for now) */
+.header-logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* nav container */
+.header-nav a {
+  color: var(--text-primary);
+  margin-left: 24px;
+  font-size: 0.9rem;
+}

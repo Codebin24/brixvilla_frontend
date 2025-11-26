@@ -1,0 +1,10 @@
+.header {
+  background: transparent;       /* so the header shows image behind */
+  color: var(--text-primary);
+}
+
+.hero {
+  padding: 120px 0;              /* vertical spacing */
+  color: var(--text-primary);
+  text-align: center;
+}

@@ -1,0 +1,83 @@
+:root {
+  /* Primary brand colors */
+  --color-primary: #0A0A0A;   /* Deep Charcoal */
+  --color-secondary: #E8DCC2; /* Sand Beige */
+  --color-accent: #2E8A8C;    /* Ocean Teal */
+  --color-light: #F7F5F0;     /* Off-White */
+
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #E8DCC2;
+  --text-muted: #C4C4C4;
+
+  /* Backgrounds */
+  --bg-dark: #000000;
+  --bg-light: #F7F5F0;
+
+  /* Buttons */
+  --btn-primary-bg: #2E8A8C;
+  --btn-primary-text: #FFFFFF;
+  --btn-hover-bg: #256F70;
+
+  /* Borders */
+  --border-light: #E8DCC2;
+}
+/* -------------------------------------------
+   VALUE PROPOSITION — MATCHING GLOBAL + HERO
+-------------------------------------------- */
+
+.value-prop-section {
+    background: var(--bg-light);
+    padding: 5rem 0;
+    font-family: 'Inter', sans-serif; /* Ensure consistency */
+}
+
+.vp-container {
+    text-align: center;
+}
+
+.vp-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.vp-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    max-width: 650px;
+    margin: 0 auto 3rem auto;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* GRID */
+.vp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+/* CARDS */
+.vp-card {
+    background: var(--color-light);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-light);
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.vp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+.vp-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+

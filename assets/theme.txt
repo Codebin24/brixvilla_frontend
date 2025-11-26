@@ -1,0 +1,24 @@
+:root {
+  /* Primary brand colors */
+  --color-primary: #0A0A0A;   /* Deep Charcoal */
+  --color-secondary: #E8DCC2; /* Sand Beige */
+  --color-accent: #2E8A8C;    /* Ocean Teal */
+  --color-light: #F7F5F0;     /* Off-White */
+
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #E8DCC2;
+  --text-muted: #C4C4C4;
+
+  /* Backgrounds */
+  --bg-dark: #000000;
+  --bg-light: #F7F5F0;
+
+  /* Buttons */
+  --btn-primary-bg: #2E8A8C;
+  --btn-primary-text: #FFFFFF;
+  --btn-hover-bg: #256F70;
+
+  /* Borders */
+  --border-light: #E8DCC2;
+}

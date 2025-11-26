@@ -1,0 +1,76 @@
+.oceanblue{
+    background-color: #1E6F9F;
+}
+.softaqua{
+    background-color: #A8E6E6;
+}
+.sunsetcoral{
+    background-color: #FF7F6A;
+}
+.sandwhite{
+    background-color: #FAF9F6;
+}
+.deepnavy{
+    background-color: #0A1A2F;
+    color:white;
+}
+
+/*footer*/
+/* Footer Style */
+
+.footer {
+    background: #0c0c0c;
+    color: #fff;
+    padding: 60px 20px 30px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-col p {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    color: #aaa;
+    font-size: 14px;
+}
