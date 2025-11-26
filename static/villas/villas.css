@@ -1,0 +1,166 @@
+:root {
+  /* Primary brand colors */
+  --color-primary: #0A0A0A;   /* Deep Charcoal */
+  --color-secondary: #E8DCC2; /* Sand Beige */
+  --color-accent: #2E8A8C;    /* Ocean Teal */
+  --color-light: #F7F5F0;     /* Off-White */
+
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #E8DCC2;
+  --text-muted: #C4C4C4;
+
+  /* Backgrounds */
+  --bg-dark: #000000;
+  --bg-light: #F7F5F0;
+
+  /* Buttons */
+  --btn-primary-bg: #2E8A8C;
+  --btn-primary-text: #FFFFFF;
+  --btn-hover-bg: #256F70;
+
+  /* Borders */
+  --border-light: #E8DCC2;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-light);
+  color: var(--color-primary);
+  border: solid pink ;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--btn-hover-bg);
+}
+/*Header*/
+.header { 
+  color: var(--text-primary);
+  border-bottom:solid black 1px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* flex layout for logo + nav */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+/* logo block (simple for now) */
+.header-logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* nav container */
+.header-nav a {
+  color: black;
+  margin-left: 24px;
+  font-size: 0.9rem;
+}
+
+/*footer*/
+/*Footer*/
+.bv-footer {
+  background: var(--color-primary);
+  color: var(--text-primary);
+  padding: 4rem 2rem 2.5rem;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.bv-footer-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Brand */
+.bv-footer-brand h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.bv-footer-brand p {
+  opacity: 0.85;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Socials */
+.bv-socials a {
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  opacity: 0.8;
+}
+.bv-socials a:hover {
+  opacity: 1;
+}
+
+/* Column Titles */
+.bv-footer h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Links */
+.bv-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bv-footer a {
+  text-decoration: none;
+  color: var(--text-primary);
+  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.bv-footer a:hover {
+  opacity: 1;
+}
+
+/* Bottom strip */
+.bv-footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}

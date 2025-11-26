@@ -58,32 +58,3 @@ h1, h2, h3 {
 .btn-primary:hover {
   background: var(--btn-hover-bg);
 }
-
-/* header */
-/* base wrapper */
-.header {
-  background: rgba(0,0,0,0.5);
-  color: var(--text-primary);
-}
-
-/* flex layout for logo + nav */
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
-}
-
-/* logo block (simple for now) */
-.header-logo {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-/* nav container */
-.header-nav a {
-  color: var(--text-primary);
-  margin-left: 24px;
-  font-size: 0.9rem;
-}
