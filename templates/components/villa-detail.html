@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/base/base.css">
+    <link rel="stylesheet" href="/static/components/villa-detail.css">
+    <script>
+        const allImages = [
+            "./images/v1.jpg",
+            "./images/v2.jpg",
+            "./images/v3.jpg",
+            "./images/v4.jpg",
+            "./images/v5.jpg",
+            "./images/v6.jpg"
+        ];
+
+        const allVideos = [
+            "./videos/v1.mp4",
+            "./videos/v2.mp4",
+            "./videos/v3.mp4"
+        ];
+
+        function openGallery(type) {
+            const modal = document.getElementById("galleryModal");
+            const container = document.getElementById("allMediaContainer");
+            container.innerHTML = "";
+
+            const data = type === "images" ? allImages : allVideos;
+
+            data.forEach(src => {
+                if(type === "images"){
+                    container.innerHTML += `<img src="${src}" />`;
+                } else {
+                    container.innerHTML += `<video src="${src}" controls></video>`;
+                }
+            });
+
+            modal.style.display = "flex";
+        }
+
+        function closeGallery() {
+            document.getElementById("galleryModal").style.display = "none";
+        }
+    </script>
+
+</head>
+<body>
+    
+    <main class="villa-detail container">
+
+        <!-- Villa Name + Location -->
+        <section class="villa-heading">
+            <h2 class="villa-name">Oceanfront Serenity</h2>
+            <p class="villa-location">Goa, India</p>
+        </section>
+
+                <!-- Gallery -->
+                <!-- IMAGES SECTION -->
+        <section class="villa-gallery">
+            <h3>Images</h3>
+            <div class="gallery-preview" id="imagePreview">
+                <!-- Display only first 4 images -->
+                <img src="./images/v1.jpg">
+                <img src="./images/v2.jpg">
+                <img src="./images/v3.jpg">
+                <img src="./images/v4.jpg">
+
+                <!-- Overlay block -->
+                <div class="see-more" onclick="openGallery('images')">
+                    + See More
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEOS SECTION -->
+        <section class="villa-videos">
+            <h3>Videos</h3>
+            <div class="gallery-preview" id="videoPreview">
+                <video src="./videos/v1.mp4"></video>
+                <video src="./videos/v2.mp4"></video>
+                <div class="see-more" onclick="openGallery('videos')">
+                    + See More
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FULL GALLERY MODAL -->
+        <div class="gallery-modal" id="galleryModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeGallery()">×</span>
+
+                <div class="all-media" id="allMediaContainer">
+                    <!-- JS will insert all images or all videos here -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Title + Description -->
+        <section class="villa-description">
+            <h3>About the Villa</h3>
+            <p>
+                Oceanfront Serenity is a premium 4BHK villa offering stunning sea views, 
+                a private pool, elegant interiors and a calm ambience — perfect for family 
+                getaways and group vacations.
+            </p>
+        </section>
+
+        <!-- Facilities & Amenities -->
+        <section class="villa-features">
+            <h3>Facilities & Amenities</h3>
+
+            <ul class="feature-list">
+                <li>✔ Private Swimming Pool</li>
+                <li>✔ 4 Fully Air-conditioned Bedrooms</li>
+                <li>✔ High-speed Wi-Fi</li>
+                <li>✔ Smart TV + OTT</li>
+                <li>✔ Fully Equipped Kitchen</li>
+                <li>✔ BBQ Setup</li>
+                <li>✔ Housekeeping</li>
+                <li>✔ Free Parking</li>
+                <li>✔ Smart TV + OTT</li>
+                <li>✔ Fully Equipped Kitchen</li>
+                <li>✔ BBQ Setup</li>
+                <li>✔ Housekeeping</li>
+                <li>✔ Free Parking</li>
+            </ul>
+        </section>
+
+        <!-- Pricing -->
+        <section class="villa-pricing">
+            <div class="price-strip">
+                <span class="price">₹15,000 / night</span>
+                <button class="btn-book">Call to Book</button>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+</html>
