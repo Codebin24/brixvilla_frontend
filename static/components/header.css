@@ -25,13 +25,14 @@
   --border-light: #E8DCC2;
 }
 
-/* base wrapper */
-.header {
-  background: var(--bg-dark);
+/*Header*/
+.header { 
   color: var(--text-primary);
+  border-bottom:solid rgba(0,0,0,0.2) 1px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-/* flex layout for logo + nav */
 .header-inner {
   display: flex;
   justify-content: space-between;
@@ -43,12 +44,12 @@
 .header-logo {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: black;
 }
 
 /* nav container */
 .header-nav a {
-  color: var(--text-primary);
+  color: black;
   margin-left: 24px;
   font-size: 0.9rem;
 }
